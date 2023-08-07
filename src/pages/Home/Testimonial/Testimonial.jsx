@@ -13,6 +13,7 @@ const Testimonial = () => {
       <div className="grid group md:grid-cols-3 mx-auto gap-8 text-center">
         <div className="cursor-pointer duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.80] hover:!scale-100 bg-white/10 p-8 rounded-xl mix-blend-luminosity">
           <img
+          loading="lazy"
             src={person1}
             alt="person-1"
             className="h-20 object-cover w-20 rounded-full mx-auto"
@@ -27,6 +28,7 @@ const Testimonial = () => {
         </div>
         <div className="cursor-pointer duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.80] hover:!scale-100  bg-white/10 p-8 rounded-xl mix-blend-luminosity">
           <img
+          loading="lazy"
             src={person2}
             alt="person-1"
             className="object-cover h-20 w-20 rounded-full mx-auto"
@@ -41,6 +43,7 @@ const Testimonial = () => {
         </div>
         <div className="cursor-pointer duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.80] hover:!scale-100 bg-white/10 p-8 rounded-xl mix-blend-luminosity">
           <img
+          loading="lazy"
             src={person3}
             alt="person-1"
             className="object-cover h-20 w-20 rounded-full mx-auto"

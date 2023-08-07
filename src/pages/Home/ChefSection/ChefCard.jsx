@@ -11,6 +11,7 @@ const ChefCard = ({props}) => {
         <div className="w-1/2">
           <img
             // className="rounded-l-md object-center "
+            loading="lazy"
             className="h-52 w-full object-cover rounded-l mx-auto"
             src={props.photoUrl}
             alt="chef-img"

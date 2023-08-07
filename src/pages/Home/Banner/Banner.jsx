@@ -9,7 +9,7 @@ const Banner = () => {
           </h1>
         </div>
       <div className="sm:w-1/2">
-      <img className="rounded-md" src={banner} alt="banner-img" />
+      <img loading="lazy" className="rounded-md" src={banner} alt="banner-img" />
       </div>
       </div>
     </div>

@@ -1,10 +1,16 @@
 import googleIcon from "../../../assets/google.svg";
 import githubIcon from "../../../assets/github.svg";
-import { Link } from "react-router-dom";
-import { useContext } from "react";
-import AuthProvider, { AuthContext } from "../../../Providers/AuthProvider";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../../Providers/AuthProvider";
 const Login = () => {
-  const  {signIn}  = useContext(AuthContext); // Destructure the signUp function from the AuthContext
+  // TODO:NAVIGATE
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+  const [error, setError] = useState("");
+
+  const { signIn } = useContext(AuthContext); // Destructure the signUp function from the AuthContext
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -14,8 +20,13 @@ const Login = () => {
     signIn(email, password)
       .then((response) => {
         console.log(response.user);
+
+        navigate(from, { replace: true });
       })
-      .catch((error) => console.log(error.message));
+      .catch((error) => {
+        console.log(error.message);
+        setError(error.message);
+      });
   };
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -23,7 +34,7 @@ const Login = () => {
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>
         </div>
-        <div className="card flex-shrink-0 w-96 p-4 max-w-sm shadow-2xl bg-base-100">
+        <div className="card flex-shrink-0 w-80 md:w-96 p-4 max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
               <label className="label">
@@ -41,7 +52,7 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="password"
                 className="input input-bordered"
                 name="password"
@@ -55,6 +66,7 @@ const Login = () => {
             <div>
               <h1></h1>
             </div>
+            <h1 className="text-red-500">{error}</h1>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
             </div>

@@ -1,10 +1,15 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
-  const  {createUser}  = useContext(AuthContext); // Destructure the signUp function from the AuthContext
-  const handleRegister= (event) => {
+  const { createUser } = useContext(AuthContext); // Destructure the signUp function from the AuthContext
+  const [error, setError] = useState("");
+
+  // TODO: NAVIGATE
+  const navigate = useNavigate();
+  const handleRegister = (event) => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
@@ -14,17 +19,29 @@ const Register = () => {
     const photo = form.photo.value;
     console.log(name, email, password, confirm, photo);
     createUser(email, password)
-    .then(res=>console.log(res.user))
-    .catch(err=>console.log(err.message))
-
- };
+      .then((res) => {
+        const user = res.user;
+        return updateProfile(user, {
+          displayName: name, // Set the user's display name (username)
+          photoURL: photo, // Set the user's photo URL
+        });
+      })
+      .then(() => {
+        console.log("User registered:", email);
+        navigate("/");
+      })
+      .catch((err) => {
+        console.log(err.message);
+        setError(err.message);
+      });
+  };
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Registration</h1>
         </div>
-        <div className="card flex-shrink-0 w-96 p-4 max-w-sm shadow-2xl bg-base-100">
+        <div className="card flex-shrink-0 w-80 md:w-96 p-4 max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleRegister} className="card-body">
             <div className="form-control">
               <label className="label">
@@ -53,7 +70,7 @@ const Register = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="Password"
                 className="input input-bordered"
                 name="password"
@@ -64,7 +81,7 @@ const Register = () => {
                 <span className="label-text">Confirm Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="Password"
                 className="input input-bordered"
                 name="confirm"
@@ -84,6 +101,7 @@ const Register = () => {
             <div>
               <h1></h1>
             </div>
+            <h1 className="text-red-500">{error}</h1>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Register</button>
             </div>
