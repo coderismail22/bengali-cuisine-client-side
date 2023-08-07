@@ -30,7 +30,6 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
-        // TODO:PRIVATE ROUTE
           path: "recipes/:id",
         element: <PrivateRoute><RecipesPage></RecipesPage></PrivateRoute>,
         loader: ({ params }) => fetch(`https://assignment-10-server-lemon.vercel.app/recipes/${params.id}`),
