@@ -7,7 +7,7 @@ const Register = () => {
   const { createUser } = useContext(AuthContext); // Destructure the signUp function from the AuthContext
   const [error, setError] = useState("");
 
-  // TODO: NAVIGATE
+  
   const navigate = useNavigate();
   const handleRegister = (event) => {
     event.preventDefault();
