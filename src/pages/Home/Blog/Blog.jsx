@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import PdfDocument from "./PDF";
-// TODO: FAQ
+
 const Blog = () => {
   const faqData = [
     {
