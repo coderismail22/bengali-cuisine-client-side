@@ -11,7 +11,7 @@ const ChefBanner = ({ id }) => {
   }, [id]);
 
   if (!chef) {
-    // TODO: SPINNERS
+   
     return <MoonLoader color="#4c10e0" />;
   }
 
