@@ -5,7 +5,6 @@ const RecipesCard = ({ recipe }) => {
   const [favourite, setFavourite] = useState(false);
   console.log(recipe);
   const { id, name, photoUrl, ingredients, method, rating } = recipe;
-  // TODO:
   const handleAddToFavourite = (id) => {
     setFavourite(true);
     Swal.fire({
