@@ -37,7 +37,7 @@ const Recipes = ({ id }) => {
   }, [chef]);
 
   if (isLoading) {
-    // TODO: SPINNER
+    
     return <MoonLoader color="#4c10e0" />;
   }
 
