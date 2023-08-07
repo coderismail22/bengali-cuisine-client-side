@@ -22,7 +22,7 @@ const ChefSection = () => {
 
   <div className="flex justify-center items-center"> {/* Flex container */}
     {loading ? (
-        // TODO: SPINNER
+       
       <MoonLoader color="#4c10e0" />
     ) : (
       <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
