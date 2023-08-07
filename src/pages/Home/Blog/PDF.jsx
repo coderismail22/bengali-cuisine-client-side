@@ -1,6 +1,6 @@
 import React from "react";
 import { Page, Text, Document, StyleSheet } from "@react-pdf/renderer";
-// TODO: DOWNLOAD PDF
+
 const styles = StyleSheet.create({
   page: {
     flexDirection: "column",
