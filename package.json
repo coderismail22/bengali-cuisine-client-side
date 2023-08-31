@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@heroicons/react": "^2.0.17",
     "@react-pdf/renderer": "^3.1.12",
     "cors": "^2.8.5",

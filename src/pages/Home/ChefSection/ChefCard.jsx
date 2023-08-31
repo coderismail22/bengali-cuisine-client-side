@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const ChefCard = ({props}) => {
+const ChefCard = ({ props }) => {
   // const { photoUrl, name, id, experience, recipes, likes } = props;
-  console.log(props.id)
+  console.log(props.id);
 
   return (
     <div>
@@ -19,7 +19,6 @@ const ChefCard = ({props}) => {
         </div>
         <div className="w-1/2">
           <h2 className="font-semibold">Name: {props.name}</h2>
-          <h2 className="font-semibold">ID: {props.id}</h2>
           <p>Experience: {props.experience}</p>
           <p>Recipes: {props.recipes}</p>
           <p>Likes: {props.likes}</p>
@@ -33,7 +32,7 @@ const ChefCard = ({props}) => {
 };
 
 ChefCard.propTypes = {
-  props:PropTypes.object,
+  props: PropTypes.object,
   photoUrl: PropTypes.string,
   name: PropTypes.string,
   id: PropTypes.number,

@@ -18,7 +18,7 @@ const RecipesCard = ({ recipe }) => {
   return (
     <div>
       {/* Recipe Card */}
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-80 bg-base-100 shadow-xl max-h-[450px]">
         <figure>
           <img loading="lazy" src={photoUrl} alt="Food Image" />
         </figure>

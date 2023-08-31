@@ -9,7 +9,7 @@ const Recipes = ({ id }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`https://assignment-10-server-lemon.vercel.app/recipes/chef/${id}`)
+    fetch(`https://bengali-cuisine-server-side.vercel.app/recipes/chef/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setChef(data);
@@ -22,7 +22,7 @@ const Recipes = ({ id }) => {
   useEffect(() => {
     if (chef && chef.name) {
       fetch(
-        `https://assignment-10-server-lemon.vercel.app/recipes/${chef.name}`
+        `https://bengali-cuisine-server-side.vercel.app/recipes/${chef.name}`
       )
         .then((res) => res.json())
         .then((data) => {
@@ -37,7 +37,6 @@ const Recipes = ({ id }) => {
   }, [chef]);
 
   if (isLoading) {
-    
     return <MoonLoader color="#4c10e0" />;
   }
 
@@ -46,9 +45,9 @@ const Recipes = ({ id }) => {
   }
 
   return (
-    <div>
-      <h1>These are recipes of the chef {chef.name}</h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3">
+    <div className="mb-5">
+      <h1 className="text-center text-2xl font-bold my-4">These are recipes of the chef {chef.name}</h1>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5">
         {recipes.map((recipe) => (
           <RecipesCard key={recipe.id} recipe={recipe} />
         ))}

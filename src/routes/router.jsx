@@ -15,27 +15,33 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
+        element: <Home></Home>,
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
       {
         path: "/register",
-        element: <Register></Register>
+        element: <Register></Register>,
       },
       {
         path: "/blog",
-        element: <Blog></Blog>
+        element: <Blog></Blog>,
       },
       {
-          path: "recipes/:id",
-        element: <PrivateRoute><RecipesPage></RecipesPage></PrivateRoute>,
-        loader: ({ params }) => fetch(`https://assignment-10-server-lemon.vercel.app/recipes/${params.id}`),
-      }
-
-    ]
+        path: "recipes/:id",
+        element: (
+          <PrivateRoute>
+            <RecipesPage></RecipesPage>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://bengali-cuisine-server-side.vercel.app/recipes/${params.id}`
+          ),
+      },
+    ],
   },
   {
     path: "*",

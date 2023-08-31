@@ -7,24 +7,24 @@ const Blog = () => {
   const faqData = [
     {
       question:
-        "01. What are the differences between Uncontrolled and Controlled Components?",
+        "01. What is our aim ?",
       answer:
-        "Answer: Controlled Components are managed by React through state and props, ensuring a predictable flow of data and rendering. Uncontrolled components are internal state often managed by the DOM.",
+        "Answer: Our aim is to provide you world class recipes from the best chefs in the world.",
     },
     {
-      question: "02. How to Validating React Props using PropTypes?",
+      question: "02. What's our future plan?",
       answer:
-        "Answer: Import PropTypes, and define expected prop types using static propTypes property in the component. Use various PropTypes (like string, number, func, etc.) to specify prop types and optional requirements.",
+        "Answer: We aim to build an online food delivery service through the web.",
     },
     {
-      question: "03. What is the difference between Node.js and Express.js?",
+      question: "03. Who can join this platform?",
       answer:
-        "Answer: Node.js is a Runtime environment enabling server-side JavaScript execution. On the other hand, Express.js is a web application framework built on Node.js, simplifying web app/API development with routing and middleware.",
+        "Answer: Anyone having knowledge or interest in cooking can join this platform",
     },
     {
-      question: "04. What are Custom Hooks in React?",
+      question: "04. Is there any hidden charge?",
       answer:
-        "Answer: Reusable JavaScript functions that encapsulate logic for better code organization. Named with the use prefix, they abstract complex state or actions, promoting reusability and maintainability.",
+        "Answer: Absolutely there is no hidden charge. This platform is 100% free of cost. Just tell your friends and family about us.That's it.",
     },
   ];
 

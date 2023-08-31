@@ -1,3 +1,9 @@
+import serviceIcon1 from "../../../../public/service_icon_1.svg";
+import serviceIcon2 from "../../../../public/service_icon_2.svg";
+import serviceIcon3 from "../../../../public/service_icon_3.svg";
+import serviceIcon4 from "../../../../public/service_icon_4.svg";
+import serviceIcon5 from "../../../../public/service_icon_5.svg";
+import serviceIcon6 from "../../../../public/service_icon_6.svg";
 const Services = () => {
   return (
     <div className="bg-blue-400 p-4 my-4 rounded-xl">
@@ -5,169 +11,85 @@ const Services = () => {
       <div className=" grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         <div className="shadow-md rounded-md bg-slate-50 p-2">
           <div className="border rounded-full inline-block border-slate-800 p-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-              />
-            </svg>
+            <img className="w-5" src={serviceIcon1} alt="" />
           </div>
           <div>
             <h1 className="font-bold">Delicious Recipes</h1>
             <p className="text-slate-500">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using Content here, content
-              here, making it look like readable English.
+              Delicious Recipes is a premium service that offers a wide range of
+              mouth-watering recipes to satisfy your taste buds. We have a team
+              of expert chefs who craft perfect recipes that cater to your
+              preferences, whether you are an experienced cook or a newbie.
             </p>
           </div>
         </div>
         <div className="shadow-md rounded-md bg-slate-50 p-2">
           <div className="border rounded-full inline-block border-slate-800 p-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-              />
-            </svg>
+            <img className="w-5" src={serviceIcon2} alt="" />
           </div>
           <div>
-            <h1 className="font-bold">Delicious Recipes</h1>
+            <h1 className="font-bold">Best Chefs</h1>
             <p className="text-slate-500">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using Content here, content
-              here, making it look like readable English.
+              Best Chefs is a premium service that offers a wide range of
+              mouth-watering recipes to satisfy your taste buds. We have a team
+              of expert chefs who craft perfect recipes that cater to your
+              preferences, whether you are an experienced cook or a newbie.
             </p>
           </div>
         </div>
         <div className="shadow-md rounded-md bg-slate-50 p-2">
           <div className="border rounded-full inline-block border-slate-800 p-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-              />
-            </svg>
+            <img className="w-5" src={serviceIcon3} alt="" />
           </div>
           <div>
-            <h1 className="font-bold">Delicious Recipes</h1>
+            <h1 className="font-bold">Big Community</h1>
             <p className="text-slate-500">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using Content here, content
-              here, making it look like readable English.
+              Big Community is a premium service that offers a wide range of
+              mouth-watering recipes to satisfy your taste buds. We have a team
+              of expert chefs who craft perfect recipes that cater to your
+              preferences, whether you are an experienced cook or a newbie.
             </p>
           </div>
         </div>
         <div className="shadow-md rounded-md bg-slate-50 p-2">
           <div className="border rounded-full inline-block border-slate-800 p-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-              />
-            </svg>
+            <img className="w-5" src={serviceIcon4} alt="" />
           </div>
           <div>
-            <h1 className="font-bold">Delicious Recipes</h1>
+            <h1 className="font-bold">Food Forum</h1>
             <p className="text-slate-500">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using Content here, content
-              here, making it look like readable English.
+              Food Forum is a premium service that offers a wide range of
+              mouth-watering recipes to satisfy your taste buds. We have a team
+              of expert chefs who craft perfect recipes that cater to your
+              preferences, whether you are an experienced cook or a newbie.
             </p>
           </div>
         </div>
         <div className="shadow-md rounded-md bg-slate-50 p-2">
           <div className="border rounded-full inline-block border-slate-800 p-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-              />
-            </svg>
+            <img className="w-5" src={serviceIcon5} alt="" />
           </div>
           <div>
-            <h1 className="font-bold">Delicious Recipes</h1>
+            <h1 className="font-bold">Food Camp</h1>
             <p className="text-slate-500">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using Content here, content
-              here, making it look like readable English.
+              Food Camp is a premium service that offers a wide range of
+              mouth-watering recipes to satisfy your taste buds. We have a team
+              of expert chefs who craft perfect recipes that cater to your
+              preferences, whether you are an experienced cook or a newbie.
             </p>
           </div>
         </div>
         <div className="shadow-md rounded-md bg-slate-50 p-2">
           <div className="border rounded-full inline-block border-slate-800 p-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-              />
-            </svg>
+            <img className="w-5" src={serviceIcon6} alt="" />
           </div>
           <div>
-            <h1 className="font-bold">Delicious Recipes</h1>
+            <h1 className="font-bold">Food Network</h1>
             <p className="text-slate-500">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using Content here, content
-              here, making it look like readable English.
+              Food Network is a premium service that offers a wide range of
+              mouth-watering recipes to satisfy your taste buds. We have a team
+              of expert chefs who craft perfect recipes that cater to your
+              preferences, whether you are an experienced cook or a newbie.
             </p>
           </div>
         </div>

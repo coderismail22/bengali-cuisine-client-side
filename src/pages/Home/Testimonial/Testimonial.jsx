@@ -18,11 +18,9 @@ const Testimonial = () => {
             alt="person-1"
             className="h-20 object-cover w-20 rounded-full mx-auto"
           />
-          <h4 className="text-xl font-bold mx-auto">JOHN DOE</h4>
+          <h4 className="text-xl font-bold mx-auto">John</h4>
           <p className="text-sm leading-7 my-3">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-            tempora a voluptates, earum cumque necessitatibus blanditiis. Cum
-            repudiandae sequi culpa.
+          This recipe website has saved me so much time and effort in the kitchen. The recipes are easy to follow and always turn out delicious. I love being able to search by ingredient and dietary restrictions. It has become my go-to for meal planning and entertaining. Highly recommend!
           </p>
           <button className="btn py-2 px-8 rounded-full">Follow</button>
         </div>
@@ -33,11 +31,9 @@ const Testimonial = () => {
             alt="person-1"
             className="object-cover h-20 w-20 rounded-full mx-auto"
           />
-          <h4 className="text-xl font-bold mx-auto">JOHN DOE</h4>
+          <h4 className="text-xl font-bold mx-auto">Marshall</h4>
           <p className="text-sm leading-7 my-3">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-            tempora a voluptates, earum cumque necessitatibus blanditiis. Cum
-            repudiandae sequi culpa.
+          This recipe website has saved me so much time and effort in the kitchen. The recipes are easy to follow and always turn out delicious. I love being able to search by ingredient and dietary restrictions. It has become my go-to for meal planning and entertaining. Highly recommend!
           </p>
           <button className="btn py-2 px-8 rounded-full">Follow</button>
         </div>
@@ -48,11 +44,9 @@ const Testimonial = () => {
             alt="person-1"
             className="object-cover h-20 w-20 rounded-full mx-auto"
           />
-          <h4 className="text-xl font-bold mx-auto">JOHN DOE</h4>
+          <h4 className="text-xl font-bold mx-auto">Daniel</h4>
           <p className="text-sm leading-7 my-3">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-            tempora a voluptates, earum cumque necessitatibus blanditiis. Cum
-            repudiandae sequi culpa.
+          This recipe website has saved me so much time and effort in the kitchen. The recipes are easy to follow and always turn out delicious. I love being able to search by ingredient and dietary restrictions. It has become my go-to for meal planning and entertaining. Highly recommend!
           </p>
           <button className="btn py-2 px-8 rounded-full">Follow</button>
         </div>
